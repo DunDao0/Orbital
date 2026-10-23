@@ -1,0 +1,12 @@
+{
+  "version": "0.2026.9.21.0.56.25",
+  "source": "https://pypi.org/project/astropy-iers-data/",
+  "files": {
+    "eopc04.1962-now": "6c1e052b7822ba84e793e28aa14080552f53d5c66b739cd0e67cb4b46d0e7815",
+    "finals2000A.all": "d7adc96fca77e27746586e8b7dd75376eebbc82ba5f65ced13379cf0ebd62327",
+    "Leap_Second.dat": "6cb6f5d4b819f2e568e25db4b0b26d89dedf031fdffb18bc94d40f4e94e268d7",
+    "ReadMe.eopc04": "42d7890543fae69df024219d1d36f242b4fcd847f6f8a756c7d37c5dfd100243",
+    "ReadMe.finals2000A": "7c6182cc0fd0cbece39711f648d15e48b49168925602e360a5709c5ccc8d5a12",
+    "README.rst": "ed153bf939ef9f77af904b4f3594c3066a214543c4e12412f9317713529e66f0"
+  }
+}

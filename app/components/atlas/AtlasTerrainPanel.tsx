@@ -1,0 +1,11 @@
+"use client";
+
+import { ellipsoidTerrainProvider } from "@/lib/atlas/terrain";
+import type { OrbitalSceneStateV1 } from "@/lib/atlas/scene/contracts";
+
+type Props = { scene: OrbitalSceneStateV1; onSceneChange: (scene: OrbitalSceneStateV1) => void };
+
+export default function AtlasTerrainPanel({ scene, onSceneChange }: Props) {
+  const surface = scene.camera.mode === "surface";
+  return <section className="atlas-tool-panel" aria-labelledby="terrain-title"><div><p className="eyebrow">SUPERFÍCIE E TERRENO</p><h2 id="terrain-title">Transição para o elipsoide terrestre</h2><p>Sem um dataset de elevação aprovado, o modo de superfície usa apenas o elipsoide de referência e não inventa montanhas ou perfis.</p></div><div className="atlas-tool-grid"><article className="atlas-tool-card"><h3>Modo de câmera</h3><div className="atlas-next-actions"><button type="button" className={surface ? "quiet" : ""} onClick={() => onSceneChange({ ...scene, camera: { ...scene.camera, mode: "surface", distance: 1.62 }, panel: "terrain" })}>Entrar na superfície</button><button type="button" className={!surface ? "quiet" : ""} onClick={() => onSceneChange({ ...scene, camera: { ...scene.camera, mode: "orbit", distance: 5.5 }, panel: "overview" })}>Voltar à órbita</button></div><p aria-live="polite">Modo atual: {surface ? "superfície" : "órbita"}. A câmera é limitada ao exterior do elipsoide no único renderer existente.</p></article><article className="atlas-tool-card"><h3>Provider de terreno</h3><dl><div><dt>Provider</dt><dd>{ellipsoidTerrainProvider.id}</dd></div><div><dt>Atribuição</dt><dd>{ellipsoidTerrainProvider.getAttribution()}</dd></div><div><dt>Cobertura</dt><dd>{ellipsoidTerrainProvider.getCoverage().description}</dd></div><div><dt>LOD, tile e perfil de elevação</dt><dd>indisponíveis sem fonte de elevação</dd></div></dl></article><article className="atlas-tool-card"><h3>Orçamento e descarte</h3><p>O contrato oferece cache LRU e descarte; o fallback não baixa tiles. A malha de superfície é lisa, com raio relativo ao elipsoide, para que o visual não se passe por elevação medida.</p><p className="atlas-next-muted">A grade e o marcador são camadas de referência separadas, controladas no painel de camadas.</p></article></div></section>;
+}

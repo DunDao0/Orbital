@@ -1,0 +1,13 @@
+[
+  {
+    "name": "spiceypy",
+    "version": "7.0.0",
+    "url": "https://files.pythonhosted.org/packages/be/f9/678c0797764c05bbbe91cd52da8a3320e7869fcb20addb889405f672b304/spiceypy-7.0.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+    "archive_info": {
+      "hash": "sha256=897130974f7a5bf59676995cac9bbd126c5607aa55593036ee7756e6f5fee5c9",
+      "hashes": {
+        "sha256": "897130974f7a5bf59676995cac9bbd126c5607aa55593036ee7756e6f5fee5c9"
+      }
+    }
+  }
+]

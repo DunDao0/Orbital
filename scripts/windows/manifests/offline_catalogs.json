@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "manifest_generated_utc": "2026-08-18T17:20:43.296768Z",
+  "entries": [
+    {
+      "source_path": "data/moons/moons.json",
+      "public_path": "public/scientific/moons.json",
+      "source": "JPL SSD satellite physical-parameter and mean-elements pages",
+      "sha256": "3160ae436bb691f708ded0fae2ea997f4cb466172fc0a05986abc32f16f191e9",
+      "public_sha256": "3160ae436bb691f708ded0fae2ea997f4cb466172fc0a05986abc32f16f191e9",
+      "size_bytes": 333317,
+      "verified_utc": "2026-08-18T17:20:43.296768Z",
+      "units": "conforme metadados de cada registro",
+      "precision_note": "Consulte a fonte e docs/limitations.md."
+    },
+    {
+      "source_path": "data/stars/gaia_bright.json",
+      "public_path": "public/scientific/gaia_bright.json",
+      "source": "ESA Gaia Archive DR3 TAP",
+      "sha256": "31435cc7e578b0f915187a8fcd8d0c4b28b31b9dea0f1a793f1e555e6f0a2e93",
+      "public_sha256": "31435cc7e578b0f915187a8fcd8d0c4b28b31b9dea0f1a793f1e555e6f0a2e93",
+      "size_bytes": 3487877,
+      "verified_utc": "2026-08-18T17:20:43.296768Z",
+      "units": "conforme metadados de cada registro",
+      "precision_note": "Consulte a fonte e docs/limitations.md."
+    },
+    {
+      "source_path": "data/constellations/iau_boundaries.json",
+      "public_path": "public/scientific/iau_boundaries.json",
+      "source": "IAU boundaries via Astropy/Roman 1987",
+      "sha256": "2d4cc5d45bc6a129c503fc9574d193ee9a7b900a08884dd51998dc427fc2500b",
+      "public_sha256": "2d4cc5d45bc6a129c503fc9574d193ee9a7b900a08884dd51998dc427fc2500b",
+      "size_bytes": 1347,
+      "verified_utc": "2026-08-18T17:20:43.296768Z",
+      "units": "conforme metadados de cada registro",
+      "precision_note": "Consulte a fonte e docs/limitations.md."
+    },
+    {
+      "source_path": "data/constellations/constellation_guides.json",
+      "public_path": "public/scientific/constellation_guides.json",
+      "source": "IAU names + Roman 1987/Delporte navigation guides",
+      "sha256": "5714dc1c6fc9c19d67aa7616b513b7d722bf631d178b8b3fbd7963da4bcf3b02",
+      "public_sha256": "5714dc1c6fc9c19d67aa7616b513b7d722bf631d178b8b3fbd7963da4bcf3b02",
+      "size_bytes": 268471,
+      "verified_utc": "2026-08-18T17:20:43.296768Z",
+      "units": "conforme metadados de cada registro",
+      "precision_note": "Consulte a fonte e docs/limitations.md."
+    },
+    {
+      "source_path": "data/constellations/iau_boundary_vertices_j2000.json",
+      "public_path": "public/scientific/iau_boundary_vertices_j2000.json",
+      "source": "Roman 1987/Delporte boundaries transformed to ICRS/J2000",
+      "sha256": "3bb819931f846910b43505edf9171cc621c3881ccf6294b11c199502556e40d5",
+      "public_sha256": "3bb819931f846910b43505edf9171cc621c3881ccf6294b11c199502556e40d5",
+      "size_bytes": 206559,
+      "verified_utc": "2026-08-18T17:20:43.296768Z",
+      "units": "conforme metadados de cada registro",
+      "precision_note": "Consulte a fonte e docs/limitations.md."
+    },
+    {
+      "source_path": "data/stars/iau_named_stars.json",
+      "public_path": "public/scientific/iau_named_stars.json",
+      "source": "IAU WGSN cross-match availability declaration",
+      "sha256": "3dad2693a317a60d1cbcf79fcd1aca5af2e891f993caa50bf0b60a49047ead9e",
+      "public_sha256": "3dad2693a317a60d1cbcf79fcd1aca5af2e891f993caa50bf0b60a49047ead9e",
+      "size_bytes": 356,
+      "verified_utc": "2026-08-18T17:20:43.296768Z",
+      "units": "conforme metadados de cada registro",
+      "precision_note": "Consulte a fonte e docs/limitations.md."
+    },
+    {
+      "source_path": "public/reference-snapshot.json",
+      "public_path": "public/reference-snapshot.json",
+      "source": "NAIF DE442s avaliado na época fixa declarada",
+      "sha256": "966923bcc10fc64244d5b331f5cbfa15590c1d9ad9e0df59c237315e6c980fac",
+      "public_sha256": "966923bcc10fc64244d5b331f5cbfa15590c1d9ad9e0df59c237315e6c980fac",
+      "size_bytes": 6962,
+      "verified_utc": "2026-08-18T17:20:43.296768Z",
+      "units": "SI por campo",
+      "precision_note": "Estado de referência; não extrapolar além da cobertura do kernel."
+    }
+  ]
+}

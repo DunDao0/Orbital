@@ -1,0 +1,8 @@
+{
+  "scene": "128 synthetic performance particles",
+  "integrator": "velocity-Verlet",
+  "steps": 20,
+  "elapsed_s": 3.556733099743724,
+  "step_ms": 177.8366549871862,
+  "note": "This benchmark measures calculation only, not browser frame rate."
+}

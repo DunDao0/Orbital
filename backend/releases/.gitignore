@@ -1,0 +1,2 @@
+# Verified maintenance wheels stay local; release policies and hashes are text.
+*.whl

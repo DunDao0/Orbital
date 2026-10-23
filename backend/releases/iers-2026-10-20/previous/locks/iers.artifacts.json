@@ -1,0 +1,13 @@
+[
+  {
+    "name": "astropy-iers-data",
+    "version": "0.2026.9.21.0.56.25",
+    "url": "https://files.pythonhosted.org/packages/7f/13/a24edfb7480eb3f2d01d2181dad934f9761d9bca2c256c75ac2753a22890/astropy_iers_data-0.2026.9.21.0.56.25-py3-none-any.whl",
+    "archive_info": {
+      "hash": "sha256=80a5fd133c661119e202880a6f0ac343c404c32fa89852adf5e23d5361213603",
+      "hashes": {
+        "sha256": "80a5fd133c661119e202880a6f0ac343c404c32fa89852adf5e23d5361213603"
+      }
+    }
+  }
+]

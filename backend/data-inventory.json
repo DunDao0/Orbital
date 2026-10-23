@@ -1,0 +1,50 @@
+{
+  "data/constellations/constellation_guides.json": {
+    "bytes": 268471,
+    "sha256": "5714dc1c6fc9c19d67aa7616b513b7d722bf631d178b8b3fbd7963da4bcf3b02"
+  },
+  "data/constellations/iau_boundaries.json": {
+    "bytes": 1347,
+    "sha256": "2d4cc5d45bc6a129c503fc9574d193ee9a7b900a08884dd51998dc427fc2500b"
+  },
+  "data/constellations/iau_boundary_vertices_j2000.json": {
+    "bytes": 206559,
+    "sha256": "3bb819931f846910b43505edf9171cc621c3881ccf6294b11c199502556e40d5"
+  },
+  "data/kernels/de442s.bsp": {
+    "bytes": 32701440,
+    "sha256": "54d97562a5b094d298b1b8eafa5a2e17e3e010ce85e1a366d07f003ad159323c"
+  },
+  "data/kernels/naif0012.tls": {
+    "bytes": 5257,
+    "sha256": "678e32bdb5a744117a467cd9601cd6b373f0e9bc9bbde1371d5eee39600a039b"
+  },
+  "data/kernels/pck00011.tpc": {
+    "bytes": 131226,
+    "sha256": "3dff7b1dbeceaa01f25467767d3fa25816051c85d162d1edf04acb310ee28bb1"
+  },
+  "data/manifests/benchmark.json": {
+    "bytes": 254,
+    "sha256": "4fbada37f1676b6f3aef657af65094760ad256d854f78cc9b570db23cd49c067"
+  },
+  "data/manifests/kernels.json": {
+    "bytes": 1982,
+    "sha256": "3d8556f0dbeb0e0ea6e4c40cfeeaaf68e1f348c9edffa693c320ef3291dbfc05"
+  },
+  "data/manifests/offline_catalogs.json": {
+    "bytes": 4213,
+    "sha256": "bbb1b066386e8b1bbe28eec1f95ca3b1aa293e9af1edd50eb9f3535eca05dff5"
+  },
+  "data/moons/moons.json": {
+    "bytes": 333317,
+    "sha256": "3160ae436bb691f708ded0fae2ea997f4cb466172fc0a05986abc32f16f191e9"
+  },
+  "data/stars/gaia_bright.json": {
+    "bytes": 3487877,
+    "sha256": "31435cc7e578b0f915187a8fcd8d0c4b28b31b9dea0f1a793f1e555e6f0a2e93"
+  },
+  "data/stars/iau_named_stars.json": {
+    "bytes": 356,
+    "sha256": "3dad2693a317a60d1cbcf79fcd1aca5af2e891f993caa50bf0b60a49047ead9e"
+  }
+}

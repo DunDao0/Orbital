@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "previous_version": "0.2026.9.21.0.56.25",
+  "version": "0.2026.10.12.1.3.27",
+  "metadata_url": "https://pypi.org/pypi/astropy-iers-data/0.2026.10.12.1.3.27/json",
+  "wheel_sha256": "d5ee18fd7645492b72b0ac3f274d5b5f9a1857334bd63bb1d0355b01a2c2733a",
+  "files": {
+    "previous": {
+      "src/astro_system/iers-policy.json": "bb40a65d4253fe4b2300207d0f7f90d1643d412ed32072f0503cfedc24a115cb",
+      "locks/iers.lock": "2fe012ba0235e3bc2254e63d1b09298ad10d610df0fdf3c0a38f2e801481ca40",
+      "locks/iers.artifacts.json": "24832717cac24056179bb650ad0d92c3812068f40b2355797c0feafb421dd91c",
+      "locks/runtime.lock": "189d417f7ef213a088be6e72d40913a9c50d8b3ece91c2fd30e2b0b7ecb86875",
+      "locks/runtime.artifacts.json": "28adc250811ce7cb3c30af92bcf7865fffa621c84541b118e66afb564a6607e8"
+    },
+    "candidate": {
+      "src/astro_system/iers-policy.json": "25f1acbaee9374f029c2c7c52984b064c84c28625c90833b2b216da0c8566f73",
+      "locks/iers.lock": "42a024182fec09a65adc0527bd13be8993e11cd525eb25b60112035f83eed31b",
+      "locks/iers.artifacts.json": "5aeef3b25f28160cd6881d7f968896a49079bd7f80166685ec041343364aec2a",
+      "locks/runtime.lock": "44000102b55d6c907360f37c7469976d47056d0ceee3182e7494d6b461ebe1d7",
+      "locks/runtime.artifacts.json": "8ef59c4fd0a2ac512f1f68d5e556c31e4833b51af28bd423a3dbd68753306a98"
+    }
+  }
+}

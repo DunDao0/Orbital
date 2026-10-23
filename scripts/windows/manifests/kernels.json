@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "manifest_generated_utc": "2026-08-18T17:32:52.885557Z",
+  "files": [
+    {
+      "name": "naif0012.tls",
+      "version": "naif0012.tls",
+      "source": "https://naif.jpl.nasa.gov/pub/naif/generic_kernels/lsk/naif0012.tls",
+      "obtained_utc": "2026-08-12T13:50:20.617813+00:00",
+      "verified_utc": "2026-08-18T17:32:52.783826Z",
+      "sha256": "678e32bdb5a744117a467cd9601cd6b373f0e9bc9bbde1371d5eee39600a039b",
+      "size_bytes": 5257,
+      "frame": "J2000 / SSB",
+      "time_scale": "ET/TDB",
+      "coverage": "extraída do SPK em runtime; não extrapolar",
+      "license": "NASA/JPL NAIF public distribution",
+      "producer": "scripts/fetch_spice_data.py"
+    },
+    {
+      "name": "pck00011.tpc",
+      "version": "pck00011.tpc",
+      "source": "https://naif.jpl.nasa.gov/pub/naif/generic_kernels/pck/pck00011.tpc",
+      "obtained_utc": "2026-08-12T13:50:22.080118+00:00",
+      "verified_utc": "2026-08-18T17:32:52.785061Z",
+      "sha256": "3dff7b1dbeceaa01f25467767d3fa25816051c85d162d1edf04acb310ee28bb1",
+      "size_bytes": 131226,
+      "frame": "J2000 / SSB",
+      "time_scale": "ET/TDB",
+      "coverage": "extraída do SPK em runtime; não extrapolar",
+      "license": "NASA/JPL NAIF public distribution",
+      "producer": "scripts/fetch_spice_data.py"
+    },
+    {
+      "name": "de442s.bsp",
+      "version": "DE442s",
+      "source": "https://naif.jpl.nasa.gov/pub/naif/generic_kernels/spk/planets/de442s.bsp",
+      "obtained_utc": "2026-08-12T13:50:55.802122+00:00",
+      "verified_utc": "2026-08-18T17:32:52.885534Z",
+      "sha256": "54d97562a5b094d298b1b8eafa5a2e17e3e010ce85e1a366d07f003ad159323c",
+      "size_bytes": 32701440,
+      "frame": "J2000 / SSB",
+      "time_scale": "ET/TDB",
+      "coverage": "extraída do SPK em runtime; não extrapolar",
+      "license": "NASA/JPL NAIF public distribution",
+      "producer": "scripts/fetch_spice_data.py"
+    }
+  ]
+}

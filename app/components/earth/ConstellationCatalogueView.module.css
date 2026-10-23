@@ -1,0 +1,25 @@
+.modes { display: flex; flex-wrap: wrap; gap: 8px; padding: 14px; background: #061420; border: 1px solid #29465b; }
+.modes button { color: #b9d4e5; background: #0e2435; border: 1px solid #355268; }
+.modes button[aria-pressed="true"] { color: #111e28; background: #eccb83; border-color: #eccb83; }
+.explorer { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(280px, 1fr); border: 1px solid #29465b; color: #d9eaf5; background: #04101d; }
+.chart { min-width: 0; padding: 24px; background: radial-gradient(ellipse at 50% 40%, #10283e, #030a13 75%); }
+.heading span { color: #90bbd4; font: .65rem ui-monospace, monospace; letter-spacing: .1em; }
+.heading h3 { margin: 12px 0; font-size: clamp(1.7rem, 3vw, 2.7rem); }
+.heading p, .note { color: #98b8cc; font-size: .78rem; line-height: 1.6; }
+.chart svg { display: block; width: 100%; height: auto; min-height: 240px; }
+.star { cursor: pointer; outline: none; }
+.star:focus-visible > circle, .star:hover > circle { stroke: #ffd889; stroke-width: 1.5px; }
+.selection { display: grid; gap: 8px; margin-top: 18px; padding: 16px; border-left: 2px solid #e9c77b; background: #0b1c2b; font-size: .8rem; overflow-wrap: anywhere; }
+.selection span { color: #a8c7da; }
+.story { min-width: 0; padding: 24px; border-left: 1px solid #29465b; line-height: 1.6; font-size: .87rem; }
+.story h3 { font-size: 1.35rem; margin: 12px 0; }
+.story h4 { margin: 20px 0 6px; color: #f0d399; }
+.story ul { padding-left: 20px; }
+.story summary { margin-top: 20px; cursor: pointer; }
+.starList { max-height: 240px; overflow: auto; padding: 0; list-style: none; }
+.starList button { width: 100%; text-align: left; padding: 8px; color: #c1dcec; background: transparent; font-size: .72rem; overflow-wrap: anywhere; }
+.starList button[aria-pressed="true"] { background: #153a52; }
+.sources { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; font-size: .73rem; }
+.sources a { color: #a9dfff; text-decoration: underline; }
+@media (max-width: 1100px) { .explorer { grid-template-columns: 1fr; } .story { border-left: 0; border-top: 1px solid #29465b; } }
+@media (max-width: 540px) { .chart, .story { padding: 16px; } }

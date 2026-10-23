@@ -1,0 +1,8 @@
+# Scientific inventories pin exact bytes. Never normalize these JSON payloads.
+public/scientific/*.json -text whitespace=cr-at-eol
+public/*.json -text whitespace=cr-at-eol
+scripts/windows/manifests/*.json -text whitespace=cr-at-eol
+backend/locks/*.json -text whitespace=cr-at-eol
+backend/locks/*.lock -text whitespace=cr-at-eol
+backend/src/astro_system/iers-policy.json -text whitespace=cr-at-eol
+backend/releases/** -text whitespace=cr-at-eol

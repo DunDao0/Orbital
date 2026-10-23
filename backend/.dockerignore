@@ -1,0 +1,15 @@
+*
+!pyproject.toml
+!src/
+!src/**
+!tests/
+!tests/**
+!validation/
+!validation/**
+!locks/
+!locks/**
+!tools/
+!tools/**
+!data-inventory.json
+**/__pycache__
+**/*.pyc

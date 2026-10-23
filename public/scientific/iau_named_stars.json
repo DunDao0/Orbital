@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "generated_utc": "2026-08-18T16:15:49.555697+00:00",
+  "source": "No IAU Working Group on Star Names cross-match is bundled in this offline distribution.",
+  "status": "unavailable",
+  "items": [],
+  "limitations": [
+    "The Gaia DR3 subset has no star-name field, so no names are inferred from identifiers or positions."
+  ]
+}

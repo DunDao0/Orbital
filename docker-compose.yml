@@ -1,0 +1,101 @@
+x-runtime: &runtime
+  # The approved binary wheel hashes target CPython 3.12 on Linux AMD64.
+  platform: linux/amd64
+  init: true
+  restart: unless-stopped
+  pids_limit: ${ORBIS_PIDS_LIMIT:-256}
+  stop_grace_period: ${ORBIS_STOP_GRACE_PERIOD:-135s}
+  logging: &logging
+    driver: json-file
+    options:
+      max-size: "${ORBIS_LOG_MAX_SIZE:-10m}"
+      max-file: "${ORBIS_LOG_MAX_FILES:-3}"
+  build:
+    context: ./backend
+    target: runtime
+  volumes:
+    - ./data:/app/data:ro
+  security_opt:
+    - no-new-privileges:true
+  cap_drop:
+    - ALL
+  read_only: true
+  tmpfs:
+    - /tmp:rw,noexec,nosuid,size=${ORBIS_TMPFS_BYTES:-268435456},mode=1777
+  environment: &environment
+    HOME: /tmp
+    XDG_CACHE_HOME: /tmp
+    OMP_NUM_THREADS: "1"
+    OPENBLAS_NUM_THREADS: "1"
+  healthcheck:
+    test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/api/health', timeout=5)"]
+    interval: 30s
+    timeout: 6s
+    start_period: 30s
+    retries: 3
+  networks:
+    - computation
+
+services:
+  orbital:
+    <<: *runtime
+    cpus: ${ORBITAL_CPUS:-2.0}
+    mem_limit: ${ORBITAL_MEMORY_LIMIT:-1g}
+    build:
+      context: ./backend
+      target: orbital
+    environment:
+      <<: *environment
+      ORBIS_SERVICE_ROLE: orbital
+    command: ["uvicorn", "astro_system.api.services:create_app", "--factory", "--host", "0.0.0.0", "--port", "8000", "--no-access-log", "--workers", "${ORBITAL_WORKERS:-1}", "--timeout-graceful-shutdown", "${ORBIS_SHUTDOWN_TIMEOUT_SECONDS:-120}"]
+
+  science:
+    <<: *runtime
+    cpus: ${SCIENCE_CPUS:-2.0}
+    mem_limit: ${SCIENCE_MEMORY_LIMIT:-2g}
+    networks:
+      - computation
+      - local_entry
+    environment:
+      <<: *environment
+      ORBIS_SERVICE_ROLE: science
+      ORBIS_ORBITAL_URL: http://orbital:8000
+      ORBIS_ORBITAL_TIMEOUT_SECONDS: "${ORBITAL_TIMEOUT_SECONDS:-120}"
+      ORBIS_SCIENCE_CONCURRENCY: "${SCIENCE_CONCURRENCY:-1}"
+    command: ["uvicorn", "astro_system.api.services:create_app", "--factory", "--host", "0.0.0.0", "--port", "8000", "--no-access-log", "--workers", "${SCIENCE_WORKERS:-1}", "--timeout-graceful-shutdown", "${ORBIS_SHUTDOWN_TIMEOUT_SECONDS:-120}"]
+    ports:
+      - "127.0.0.1:${SCIENCE_PORT:-8000}:8000"
+    depends_on:
+      orbital:
+        condition: service_healthy
+
+  science-tests:
+    platform: linux/amd64
+    init: true
+    restart: "no"
+    cpus: ${TEST_CPUS:-2.0}
+    mem_limit: ${TEST_MEMORY_LIMIT:-3g}
+    pids_limit: ${TEST_PIDS_LIMIT:-512}
+    stop_grace_period: ${ORBIS_STOP_GRACE_PERIOD:-135s}
+    logging: *logging
+    build:
+      context: ./backend
+      target: science-tests
+    profiles: ["tests"]
+    network_mode: none
+    read_only: true
+    cap_drop: ["ALL"]
+    security_opt: ["no-new-privileges:true"]
+    tmpfs:
+      - /tmp:rw,noexec,nosuid,size=${TEST_TMPFS_BYTES:-536870912},mode=1777
+    environment:
+      <<: *environment
+    volumes:
+      - ./data:/app/data:ro
+      - ./public/scientific:/app/public/scientific:ro
+      - ./public/reference-snapshot.json:/app/public/reference-snapshot.json:ro
+
+networks:
+  computation:
+    internal: true
+  local_entry:

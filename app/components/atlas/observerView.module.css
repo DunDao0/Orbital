@@ -1,0 +1,13 @@
+.observer :global(.atlas-stage) { min-height: 560px; height: min(74vh, 760px); }
+.observer :global(.atlas-actions) { top: auto; bottom: 44px; left: 18px; right: 18px; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; width: auto; }
+.observer :global(.atlas-actions) button { min-height: 38px; background: #0b2035e8; color: #dcedff; border-color: #7196b3; }
+.observer :global(.atlas-actions) button:hover { background: #254763; }
+.observer :global(.atlas-status) { max-width: calc(100% - 32px); }
+.observer :global(.atlas-debug-stats) { display: none; }
+.observer :global(canvas) { touch-action: none; cursor: grab; }
+.observer :global(canvas):active { cursor: grabbing; }
+.observer :global(canvas):focus-visible { outline: 2px solid #f4d69b; outline-offset: -3px; }
+.observer :global(.atlas-instructions) { padding: 0 12px; text-align: center; }
+.skyNotice { position: absolute; z-index: 3; left: 20px; top: 102px; max-width: min(480px, calc(100% - 40px)); padding: 9px 12px; background: #041321dd; border-left: 2px solid #f4cc7e; color: #b8d4e8; font-size: .75rem; pointer-events: none; }
+.skyNotice strong { display: block; margin-top: 8px; color: #f5dca4; line-height: 1.5; }
+@media (max-width: 540px) { .observer :global(.atlas-stage) { height: 600px; } .observer :global(.atlas-actions) { bottom: 70px; } .observer :global(.atlas-instructions) { max-width: 100%; line-height: 1.7; } }

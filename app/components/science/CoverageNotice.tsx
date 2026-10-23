@@ -1,0 +1,3 @@
+export default function CoverageNotice({ fixedEpoch, validFromUtc, validUntilUtc, onUseFixed }: { fixedEpoch?: string; validFromUtc?: string; validUntilUtc?: string; onUseFixed?: () => void }) {
+  return <aside className="science-coverage"><strong>Cobertura científica</strong>{validFromUtc && <p>{validFromUtc}{validUntilUtc ? ` a ${validUntilUtc}` : ""}</p>}{fixedEpoch && <p>Há um snapshot fixo em {fixedEpoch}. Ele só substitui uma consulta quando essa época é escolhida explicitamente.</p>}{fixedEpoch && onUseFixed && <button type="button" className="quiet" onClick={onUseFixed}>Usar snapshot fixo de 5 de agosto de 2026</button>}</aside>;
+}

@@ -1,0 +1,2 @@
+# Generated from approved versions; install with --require-hashes --only-binary=:all:.
+astropy-iers-data==0.2026.8.10.0.32.39 --hash=sha256:04239afd6e9615165b84da1b84d73f03ca473f0ddf53b516c260e27349a95d03

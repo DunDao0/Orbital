@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "manifest_generated_utc": "2026-08-18T17:20:43.296768Z",
+  "reference_snapshot": {
+    "epoch": "2026-08-05T00:00:00.000Z",
+    "fixed_epoch": true,
+    "source": "NAIF SPICE DE442s",
+    "body_count": 10,
+    "sha256": "966923bcc10fc64244d5b331f5cbfa15590c1d9ad9e0df59c237315e6c980fac"
+  },
+  "kernels": {
+    "count": 3,
+    "manifest": "data/manifests/kernels.json"
+  },
+  "catalogs": {
+    "moons": {
+      "count": 460,
+      "by_primary": {
+        "Earth": 1,
+        "Mars": 2,
+        "Jupiter": 115,
+        "Saturn": 291,
+        "Uranus": 30,
+        "Neptune": 16,
+        "Pluto": 5
+      },
+      "source": [
+        "https://ssd.jpl.nasa.gov/sats/phys_par/",
+        "https://ssd.jpl.nasa.gov/sats/elem/"
+      ]
+    },
+    "stars": {
+      "count": 10000,
+      "source": "ESA Gaia Archive DR3 TAP"
+    },
+    "constellations": {
+      "count": 88,
+      "source": "IAU constellation boundaries via Astropy's Roman 1987 dataset"
+    },
+    "constellation_guides": {
+      "count": 88,
+      "source": "IAU/Roman offline guide catalogue"
+    }
+  },
+  "provenance": "Checksums, public-copy relationships and verification timestamps are stored in data/manifests/offline_catalogs.json."
+}

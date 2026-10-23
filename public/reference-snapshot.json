@@ -1,0 +1,252 @@
+{
+  "epoch": "2026-08-05T00:00:00.000Z",
+  "epoch_metadata": {
+    "input_utc": "2026-08-05T00:00:00Z",
+    "canonical_utc": "2026-08-05T00:00:00.000Z",
+    "ephemeris_time_et_s": 839160069.1831694,
+    "state_time_scale": "TDB/ET"
+  },
+  "frame": "J2000",
+  "center": "Solar System Barycenter",
+  "time_scale": "TDB/ET",
+  "source": "NAIF SPICE DE442s",
+  "origin": "verified DE442s read-only fallback",
+  "provider": "de442s-readonly-fallback",
+  "coverage": {
+    "valid_utc_from": "1849-12-25T23:59:27.816Z",
+    "valid_utc_until": "2150-01-21T23:58:50.816Z"
+  },
+  "bodies": [
+    {
+      "name": "Sun",
+      "naif_id": 10,
+      "body_naif_id": 10,
+      "state_target_naif_id": 10,
+      "state_center_naif_id": 0,
+      "state_kind": "physical-center",
+      "state_target_name": "Sun",
+      "mu_m3_s2": 1.3271244004127942e+20,
+      "radius_m": 695700000.0,
+      "color": "#ffd36b",
+      "position_m": [
+        -238890243.6539894,
+        -729649737.358574,
+        -299705162.4819682
+      ],
+      "velocity_m_s": [
+        10.876441366392253,
+        3.4472887579171845,
+        1.2481138661992908
+      ],
+      "center_note": "physical-body state"
+    },
+    {
+      "name": "Mercury",
+      "naif_id": 199,
+      "body_naif_id": 199,
+      "state_target_naif_id": 199,
+      "state_center_naif_id": 0,
+      "state_kind": "physical-center",
+      "state_target_name": "Mercury",
+      "mu_m3_s2": 22032000000000.0,
+      "radius_m": 2439700.0,
+      "color": "#bcb5aa",
+      "position_m": [
+        46081514930.45205,
+        16936396591.301952,
+        4337044322.642407
+      ],
+      "velocity_m_s": [
+        -27143.59656889821,
+        41093.15162732079,
+        24765.786143465768
+      ],
+      "center_note": "physical-body state"
+    },
+    {
+      "name": "Venus",
+      "naif_id": 299,
+      "body_naif_id": 299,
+      "state_target_naif_id": 299,
+      "state_center_naif_id": 0,
+      "state_kind": "physical-center",
+      "state_target_name": "Venus",
+      "mu_m3_s2": 324858592000000.0,
+      "radius_m": 6051800.0,
+      "color": "#e6b16b",
+      "position_m": [
+        -13025064372.067173,
+        -99463562748.3189,
+        -43918300186.38325
+      ],
+      "velocity_m_s": [
+        34553.12519534333,
+        -3085.2559030590082,
+        -3573.9109166267663
+      ],
+      "center_note": "physical-body state"
+    },
+    {
+      "name": "Earth",
+      "naif_id": 399,
+      "body_naif_id": 399,
+      "state_target_naif_id": 399,
+      "state_center_naif_id": 0,
+      "state_kind": "physical-center",
+      "state_target_name": "Earth",
+      "mu_m3_s2": 398600435436000.0,
+      "radius_m": 6371008.4,
+      "color": "#62a8ff",
+      "position_m": [
+        101796374789.46204,
+        -103801452344.24763,
+        -44980502620.65415
+      ],
+      "velocity_m_s": [
+        21584.545078525487,
+        18268.052843783214,
+        7917.875312043932
+      ],
+      "center_note": "physical-body state"
+    },
+    {
+      "name": "Moon",
+      "naif_id": 301,
+      "body_naif_id": 301,
+      "state_target_naif_id": 301,
+      "state_center_naif_id": 0,
+      "state_kind": "physical-center",
+      "state_target_name": "Moon",
+      "mu_m3_s2": 4902800118000.0,
+      "radius_m": 1737400.0,
+      "color": "#d7dde8",
+      "position_m": [
+        102128219451.52411,
+        -103650286281.3106,
+        -44882711983.13054
+      ],
+      "velocity_m_s": [
+        21052.94261751955,
+        19066.741733430736,
+        8314.068913567355
+      ],
+      "center_note": "physical-body state"
+    },
+    {
+      "name": "Mars",
+      "naif_id": 499,
+      "body_naif_id": 499,
+      "state_target_naif_id": 4,
+      "state_center_naif_id": 0,
+      "state_kind": "system-barycenter",
+      "state_target_name": "Mars system barycenter",
+      "mu_m3_s2": 42828373620000.0,
+      "radius_m": 3389500.0,
+      "color": "#de745c",
+      "position_m": [
+        125587111982.57143,
+        166912986373.73044,
+        73200455286.91777
+      ],
+      "velocity_m_s": [
+        -19034.906076218052,
+        14172.756628140836,
+        7014.06866309484
+      ],
+      "center_note": "planetary system barycenter state"
+    },
+    {
+      "name": "Jupiter",
+      "naif_id": 599,
+      "body_naif_id": 599,
+      "state_target_naif_id": 5,
+      "state_center_naif_id": 0,
+      "state_kind": "system-barycenter",
+      "state_target_name": "Jupiter system barycenter",
+      "mu_m3_s2": 1.266865349218008e+17,
+      "radius_m": 69911000.0,
+      "color": "#d9a675",
+      "position_m": [
+        -471513623023.4934,
+        579038188055.4567,
+        259676317050.8151
+      ],
+      "velocity_m_s": [
+        -10643.880620135735,
+        -6691.2689948207335,
+        -2608.927755098734
+      ],
+      "center_note": "planetary system barycenter state"
+    },
+    {
+      "name": "Saturn",
+      "naif_id": 699,
+      "body_naif_id": 699,
+      "state_target_naif_id": 6,
+      "state_center_naif_id": 0,
+      "state_kind": "system-barycenter",
+      "state_target_name": "Saturn system barycenter",
+      "mu_m3_s2": 3.793120749865224e+16,
+      "radius_m": 58232000.0,
+      "color": "#d9c487",
+      "position_m": [
+        1395672488770.8076,
+        222472821088.96826,
+        31777779007.992107
+      ],
+      "velocity_m_s": [
+        -2013.1764856943848,
+        8772.183346528567,
+        3710.0354818834394
+      ],
+      "center_note": "planetary system barycenter state"
+    },
+    {
+      "name": "Uranus",
+      "naif_id": 799,
+      "body_naif_id": 799,
+      "state_target_naif_id": 7,
+      "state_center_naif_id": 0,
+      "state_kind": "system-barycenter",
+      "state_target_name": "Uranus system barycenter",
+      "mu_m3_s2": 5793951322279009.0,
+      "radius_m": 25362000.0,
+      "color": "#98e5eb",
+      "position_m": [
+        1365779804434.418,
+        2359845679512.061,
+        1014230322353.0858
+      ],
+      "velocity_m_s": [
+        -6063.017771184539,
+        2606.65428856136,
+        1227.3861498900246
+      ],
+      "center_note": "planetary system barycenter state"
+    },
+    {
+      "name": "Neptune",
+      "naif_id": 899,
+      "body_naif_id": 899,
+      "state_target_naif_id": 8,
+      "state_center_naif_id": 0,
+      "state_kind": "system-barycenter",
+      "state_target_name": "Neptune system barycenter",
+      "mu_m3_s2": 6836527100580398.0,
+      "radius_m": 24622000.0,
+      "color": "#4b77ee",
+      "position_m": [
+        4464778290839.923,
+        206437777929.85266,
+        -26661201227.954987
+      ],
+      "velocity_m_s": [
+        -253.23444332893735,
+        5054.774971351467,
+        2075.250689518483
+      ],
+      "center_note": "planetary system barycenter state"
+    }
+  ],
+  "fixed_epoch": true
+}
